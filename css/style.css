@@ -1,0 +1,82 @@
+/* * a selector that effects all elements */
+* {
+    /* 
+    A setting that makes sure that paddings and borders are included in the total widht/height.
+    and NOT added to the total width/heigh
+    */
+    box-sizing: border-box;
+}
+#boxes {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: inline-block;
+    height: 100px;
+    width: 31.7%;
+    /* border: 1px solid #333; */
+    margin: 0 auto;
+    margin-right: 2%;
+}
+
+.box:first-child {
+    background-color:paleturquoise;
+}
+
+.box:nth-child(2) {
+    background-color:indianred;
+}
+
+.box:last-child {
+    margin: 0;
+    background-color:goldenrod;
+}
+
+
+#container {
+    /* border: 1px solid #333;
+    height: 600px; */
+    width: 960px;
+    margin: 20px auto;
+}
+
+#header,
+#sidebar,
+#main-content,
+#footer,
+.box {
+    padding: 20px;
+}
+
+#header {
+    background-color: skyblue;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#content {
+    /* background-color: beige; */
+    height: 300px;
+}
+
+#sidebar {
+    background-color: pink;
+    display: inline-block;
+    height: 100%;
+    width: 160px;
+    margin-right: 20px;
+}
+
+#main-content {
+    background-color: beige;
+    display: inline-block;
+    height: 100%;
+    width: 776px;
+}
+
+#footer {
+    background-color: navy;
+    height: 100px;
+    margin-top: 20px;
+}
